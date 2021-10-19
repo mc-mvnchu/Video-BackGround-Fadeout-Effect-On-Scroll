@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fadeout Video Background On Scroll</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Start Vide Section -->
+        <section>
+            <video src="bg2.mp4" autoplay="" muted="" loop="">
+            </video>
+            <h1 class="text-center">Scroll Down Please </h1>
+        </section>
+        <!-- End Video Section -->
+
+        <!-- Start Content Section -->
+        <section>
+            <!-- Where Content Follows when Scroll -->
+            <div class="content">
+                <h2>Fadeout Video Background On Scroll</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis voluptatem optio, quidem excepturi sapiente earum eum autem! Ea rem excepturi nisi dignissimos recusandae veniam ratione vitae ad voluptate soluta.
+                Obcaecati quidem sit odit reiciendis quis placeat repellendus numquam quos molestias repellat necessitatibus, ea sapiente quibusdam nisi quod? Hic dolore distinctio architecto inventore dolorum possimus accusantium, ad laboriosam voluptas cum.
+                Mollitia labore illo numquam qui delectus atque aut officiis iusto eligendi nobis quos voluptatibus in, minus voluptates natus omnis obcaecati esse, vero sunt sit blanditiis quisquam aspernatur laudantium? Explicabo, facilis!
+                Possimus, ipsum quod consectetur dolor quidem at ea dolorem quam delectus assumenda fuga facilis dolore aspernatur laudantium facere incidunt. Ea voluptatibus porro perferendis ipsam optio officia totam, doloremque cum laudantium?
+                Eligendi eum aliquid reiciendis? Eaque enim quia labore harum neque consequatur suscipit cupiditate maiores. Aut libero impedit consequuntur, illum temporibus repudiandae. Alias atque deserunt eaque sapiente architecto cupiditate quidem dolore.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque excepturi aut fuga ipsa ab temporibus assumenda impedit sunt soluta voluptatem, autem minima perspiciatis labore, error adipisci, dicta cupiditate. Dolorem, in!
+                Maxime amet explicabo soluta mollitia exercitationem, ea inventore ullam minima accusamus recusandae nemo repellat saepe optio repudiandae aliquid. Dicta modi at dignissimos, facilis deleniti voluptate magni. Inventore nulla quidem accusantium.
+                Quibusdam est, magnam at, aperiam deleniti esse, culpa facilis fugit unde atque officiis necessitatibus sequi soluta quidem dignissimos reprehenderit tempore neque eveniet debitis aliquid alias cum. Aliquam autem nihil non?
+                Blanditiis maiores provident odit, tempora molestiae necessitatibus earum cumque asperiores, fugit similique ad doloribus laborum facilis aliquam, maxime commodi velit. Iusto error necessitatibus quasi. Nesciunt similique et dolor corporis illo!
+                Harum, non quidem? Maxime ipsam alias ut magnam excepturi aspernatur. Possimus est laudantium pariatur? Ex, eligendi alias? Eum, voluptatibus. Earum atque quae quos odit tempore excepturi in fuga quisquam amet.
+            </p>
+            </div>
+        </section>
+    </body>
+    <!-- Script JS -->
+    <!-- External Link -->
+    <!-- <script src="script.js"></script> -->
+
+    <!-- Internal Link -->
+    <script type="text/javascript">
+        
+        //JS script to add a Query Selector from the `Video` Section
+        let video = document.querySelector('video');
+        // Scroll function is appended
+        window.addEventListener('scroll', function(){
+            // Where the scroll is given a function method based on the `value`.style.opacity
+            let value = 1 + window.scrollY/-600;
+            video.style.opacity = value;
+        });
+
+    </script>
+</html>
